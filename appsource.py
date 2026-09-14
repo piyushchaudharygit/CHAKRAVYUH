@@ -241,7 +241,7 @@ def classify_file(filename: str, content: bytes) -> dict:
 #  API ENDPOINTS
 # ──────────────────────────────────────────────────────────────
 
-@app.post("/api/analyze")
+@app.post("/analyze")
 async def analyze_file(file: UploadFile = File(...)):
     """Upload a file and get behavioral analysis result."""
     content = await file.read()
@@ -250,7 +250,7 @@ async def analyze_file(file: UploadFile = File(...)):
     return result
 
 
-@app.get("/api/demo/{scenario}")
+@app.get("/demo/{scenario}")
 async def demo_scenario(scenario: str):
     """Load a demo scenario without file upload."""
     key = scenario.lower() if scenario.lower() in THREAT_PROFILES else "trojan"
