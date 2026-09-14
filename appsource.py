@@ -553,7 +553,7 @@ async function upload(file) {
   showScan();
   const fd = new FormData(); fd.append('file', file);
   try {
-    const r = await fetch('/api/analyze', {method:'POST', body:fd});
+   const r = await fetch('/analyze', {method:'POST', body:fd});
     render(await r.json());
   } catch(e) { alert('Error: Make sure app.py is running on port 8000'); }
   hideScan();
@@ -561,7 +561,7 @@ async function upload(file) {
 
 async function loadDemo(s) {
   showScan();
-  try { render(await (await fetch('/api/demo/'+s)).json()); }
+  try { render(await (await fetch('/demo/'+s)).json()); }
   catch(e) { alert('API error'); }
   hideScan();
 }
