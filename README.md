@@ -1,8 +1,10 @@
 🛡️ Chakravyuh: AI-Based Malware Behavioral Classifier
+
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-Random_Forest-FF6F00?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
 Hey everyone! 👋 This is my hackathon project for the AI & Threat Intelligence track.
 
 I built Chakravyuh (which means an inescapable defensive formation) to solve a huge problem in modern cybersecurity: how do we catch malware that constantly changes its disguise?
